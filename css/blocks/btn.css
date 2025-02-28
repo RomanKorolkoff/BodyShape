@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;
+
+    padding: 18px clamp(2.625rem, 1.875rem + 3.75vw, 4.688rem) 15px;
+
+    border-radius: 7px;
+    background-color: var(--accent);
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 0.26em;
+    color: #000;
+
+    line-height: 1;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #fcb722;
+}
+
+@media (max-width: 800px){
+    .btn {
+        letter-spacing: 0.16em;
+    }
+}

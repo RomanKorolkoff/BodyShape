@@ -1,0 +1,92 @@
+.section {
+    padding: 150px 0;
+}
+
+.section-header {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+    max-width: 800px;
+    width: 100%;
+
+    
+    text-align: center;
+}
+
+.section-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: clamp(3rem, 1.909rem + 5.45vw, 6rem); /* 96 - 48*/
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.section-header p {
+    line-height: 200%;
+}
+
+.section-trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 30px;
+}
+
+.section-programs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 105px 32px;
+}
+
+@media (max-width: 1200px) {
+    .section-programs-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px 32px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    
+    .section {
+        padding: 100px 0;
+    }
+
+    .section-header p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .section-trainers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sectino-programs-grid {
+        gap: 60px 32px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .section {
+        padding: 80px;
+    }
+
+    .section-trainers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-programs-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px 10px;
+        justify-items: center;
+    }
+}
